@@ -56,8 +56,11 @@
 }
 
 .nav-brand span {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 1.25rem;
+    background: linear-gradient(120deg, #f97316 0%, #fb923c 35%, #60a5fa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nav-menu {
