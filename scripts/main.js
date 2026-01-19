@@ -9,12 +9,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const navMenu = document.getElementById('navMenu');
     
     if (navToggle && navMenu) {
+        // Toggle mobile menu open/close
         navToggle.addEventListener('click', function() {
             this.classList.toggle('active');
             navMenu.classList.toggle('active');
         });
 
-        // Close menu when clicking outside
+        // Close menu when clicking outside the nav
         document.addEventListener('click', function(e) {
             if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
                 navToggle.classList.remove('active');
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Close menu when clicking a link
+        // Close menu after tapping a nav link (better mobile UX)
         const navLinks = navMenu.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
@@ -32,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Hide/show navigation on scroll
+    // Hide/show navigation on scroll to save vertical space when scrolling down
     let lastScroll = 0;
     const nav = document.querySelector('.navigation');
     
