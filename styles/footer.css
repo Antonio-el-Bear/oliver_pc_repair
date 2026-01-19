@@ -1,0 +1,79 @@
+/* ========================================
+   FOOTER
+   ======================================== */
+
+.footer {
+    background: #020617;
+    border-top: 1px solid #1e293b;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: linear-gradient(135deg, #f97316 0%, #3b82f6 100%);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-logo svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    color: white;
+}
+
+.footer-brand span {
+    color: white;
+    font-weight: 700;
+    font-size: 1.125rem;
+}
+
+.footer-copyright {
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+.footer-made {
+    color: #64748b;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.heart-icon {
+    width: 1rem;
+    height: 1rem;
+    color: #ef4444;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-brand {
+        justify-content: center;
+    }
+}

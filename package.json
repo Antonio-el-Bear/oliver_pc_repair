@@ -1,0 +1,18 @@
+{
+  "name": "pc-repairs-pretoria",
+  "version": "1.0.0",
+  "description": "Professional PC and laptop repair services website for Pretoria",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -o",
+    "dev": "npx live-server --port=8000"
+  },
+  "keywords": [
+    "pc-repair",
+    "laptop-repair",
+    "pretoria",
+    "computer-services"
+  ],
+  "author": "PC Repairs Pretoria",
+  "license": "MIT"
+}

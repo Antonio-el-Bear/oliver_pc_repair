@@ -1,0 +1,209 @@
+/* ========================================
+   PRICING SECTION
+   ======================================== */
+
+.pricing-section {
+    background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+    position: relative;
+}
+
+.pricing-background {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+
+.pricing-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.05;
+}
+
+.orb-left {
+    width: 500px;
+    height: 500px;
+    background: #3b82f6;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.orb-right {
+    width: 600px;
+    height: 600px;
+    background: #f97316;
+    top: 25%;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.pricing-card {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.8) 100%);
+    border: 2px solid rgba(249, 115, 22, 0.3);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    animation: fadeInScale 0.8s ease-out;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.pricing-header {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.pricing-header h3 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+}
+
+.star-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: white;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.price-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+    transition: background 0.3s ease;
+    animation: slideInLeft 0.6s ease-out both;
+}
+
+.price-item:nth-child(odd) {
+    border-right: 1px solid rgba(51, 65, 85, 0.5);
+}
+
+.price-item:nth-last-child(-n+2) {
+    border-bottom: none;
+}
+
+.price-item:nth-child(1) { animation-delay: 0.1s; }
+.price-item:nth-child(2) { animation-delay: 0.2s; }
+.price-item:nth-child(3) { animation-delay: 0.3s; }
+.price-item:nth-child(4) { animation-delay: 0.4s; }
+.price-item:nth-child(5) { animation-delay: 0.5s; }
+.price-item:nth-child(6) { animation-delay: 0.6s; }
+.price-item:nth-child(7) { animation-delay: 0.7s; }
+.price-item:nth-child(8) { animation-delay: 0.8s; }
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.price-item:hover {
+    background: rgba(51, 65, 85, 0.2);
+}
+
+.price-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.check-icon {
+    width: 2rem;
+    height: 2rem;
+    background: rgba(59, 130, 246, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.check-icon svg {
+    width: 1rem;
+    height: 1rem;
+    color: #60a5fa;
+}
+
+.price-info span {
+    color: white;
+    font-weight: 500;
+}
+
+.price {
+    color: #f97316;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.pricing-note {
+    text-align: center;
+    color: #64748b;
+    font-size: 0.875rem;
+    margin-top: 2rem;
+    animation: fadeIn 1s ease-out 1s both;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .price-item {
+        border-right: none !important;
+    }
+
+    .price-item:not(:last-child) {
+        border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+    }
+
+    .pricing-header {
+        padding: 1.5rem;
+    }
+
+    .pricing-header h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .price-item {
+        padding: 1.25rem 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .price {
+        align-self: flex-end;
+    }
+}

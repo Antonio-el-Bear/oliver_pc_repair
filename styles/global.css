@@ -1,0 +1,163 @@
+/* ========================================
+   RESET & BASE STYLES
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ========================================
+   UTILITY CLASSES
+   ======================================== */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -5px rgba(249, 115, 22, 0.4);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    color: white;
+}
+
+.btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -5px rgba(34, 197, 94, 0.4);
+}
+
+.btn-orange {
+    background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
+    color: white;
+    flex: 1;
+}
+
+.btn-orange:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -5px rgba(249, 115, 22, 0.4);
+}
+
+.btn-green {
+    background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+    color: white;
+    flex: 1;
+}
+
+.btn-green:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px -5px rgba(22, 163, 74, 0.4);
+}
+
+/* ========================================
+   SECTION STYLES
+   ======================================== */
+
+section {
+    position: relative;
+    padding: 6rem 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-badge {
+    display: inline-block;
+    color: #f97316;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    font-size: 1.125rem;
+    color: #94a3b8;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 0.875rem 1.5rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    section {
+        padding: 4rem 0;
+    }
+}
