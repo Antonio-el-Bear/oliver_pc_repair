@@ -29,7 +29,6 @@
     background-position: center;
     opacity: 0.3;
     filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3));
-    animation: bounce 8s ease-in-out infinite;
 }
 
 .bouncing-logo {
@@ -105,14 +104,14 @@
 }
 
 /* Position and animate each bouncing element */
-.bouncing-element:nth-child(1) {
+.bouncing-element:nth-child(4) {
     top: 10%;
     left: 45%;
     animation: bounce1 12s ease-in-out infinite;
     animation-delay: 0s;
 }
 
-.bouncing-element:nth-child(2) {
+.bouncing-element:nth-child(5) {
     top: 25%;
     right: 20%;
     animation: bounce2 15s ease-in-out infinite;
@@ -121,14 +120,14 @@
     height: 70px;
 }
 
-.bouncing-element:nth-child(3) {
+.bouncing-element:nth-child(6) {
     bottom: 20%;
     right: 35%;
     animation: bounce3 13s ease-in-out infinite;
     animation-delay: 1s;
 }
 
-.bouncing-element:nth-child(4) {
+.bouncing-element:nth-child(7) {
     top: 40%;
     right: 30%;
     animation: bounce4 14s ease-in-out infinite;
@@ -137,14 +136,14 @@
     height: 90px;
 }
 
-.bouncing-element:nth-child(5) {
+.bouncing-element:nth-child(8) {
     bottom: 30%;
     right: 15%;
     animation: bounce5 16s ease-in-out infinite;
     animation-delay: 4s;
 }
 
-.bouncing-element:nth-child(6) {
+.bouncing-element:nth-child(9) {
     top: 60%;
     right: 42%;
     animation: bounce6 11s ease-in-out infinite;
@@ -153,18 +152,18 @@
     height: 75px;
 }
 
-.bouncing-element:nth-child(7) {
+.bouncing-element:nth-child(10) {
     top: 15%;
-    left: 45%;
+    right: 25%;
     animation: bounce1 17s ease-in-out infinite;
     animation-delay: 5s;
     width: 85px;
     height: 85px;
 }
 
-.bouncing-element:nth-child(8) {
-    bottom: 25%;
-    right: 40%;
+.bouncing-element:nth-child(11) {
+    bottom: 15%;
+    right: 20%;
     animation: bounce3 13.5s ease-in-out infinite;
     animation-delay: 2.5s;
 }
