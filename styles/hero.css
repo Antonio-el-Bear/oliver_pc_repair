@@ -29,7 +29,7 @@
 
 .hero-code-rain span {
     position: absolute;
-    top: -15%;
+    top: -30%;
     width: 52px;
     height: 52px;
     background-repeat: no-repeat;
@@ -61,8 +61,8 @@
 .hero-code-rain span:nth-child(12) { left: 12%; animation-duration: 15.5s; animation-delay: 5s; --scale: 0.95; }
 
 @keyframes fall {
-    0% { transform: translateY(0) rotate(0deg) scale(var(--scale, 1)); }
-    100% { transform: translateY(130%) rotate(12deg) scale(var(--scale, 1)); }
+    0% { transform: translateY(-120%) rotate(0deg) scale(var(--scale, 1)); }
+    100% { transform: translateY(140%) rotate(8deg) scale(var(--scale, 1)); }
 }
 
 .gradient-orb {
